@@ -1,0 +1,90 @@
+.ChatAreaContainer {
+    width: 75vw;
+}
+
+.MessageInput {
+    position: fixed;
+    bottom: 0;
+}
+
+.MessageInputContainer {
+    background-color: #fff;
+}
+
+.formCon {
+    width: 74vw;
+    padding-block: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.messsage {
+    width: 56vw;
+    height: 4vh;
+    border-radius: 30px;
+    padding: 5px 10px;
+    font-size: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.sendMessage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    background-color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.ReceiverNameContainer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+}
+
+.ReceiverName {
+    margin-inline: 10px;
+}
+
+.sendMessage svg {
+    margin-right: 8px;
+}
+
+.current-user-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 25%;
+}
+
+.username {
+    margin: 0;
+    font-size: 24px;
+}
+
+.slogan {
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #666;
+}
+
+@media (max-width: 500px) {
+    .formCon {
+        width: 100vw;
+    }
+    .current-user-card{
+        display: none;
+    }
+}

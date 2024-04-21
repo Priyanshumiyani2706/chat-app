@@ -1,0 +1,52 @@
+.Message-Container {
+    height: 70.5vh;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.message {
+    display: flex;
+    max-width: 100%;
+}
+
+.sent .message-content {
+    margin: 10px;
+    margin-left: auto;
+}
+
+.message-content {
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.sent .message-content {
+    background-color: #000;
+    color: #fff;
+}
+
+.received .message-content {
+    background-color: #f3f3f3;
+    color: #000;
+    margin: 10px;
+}
+
+.message-text {
+    margin: 0;
+}
+
+.message-timestamp {
+    font-size: 12px;
+    color: #666;
+}
+
+@media (max-width: 500px) {
+    .Message-Container {
+        width: 100vw;
+    }
+
+}
